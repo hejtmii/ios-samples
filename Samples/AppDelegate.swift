@@ -2,9 +2,6 @@
 //  AppDelegate.swift
 //  Samples
 //
-//  Created by Iva Hejtmánková on 26.09.17.
-//  Copyright © 2017 Iva Hejtmánková. All rights reserved.
-//
 
 import UIKit
 

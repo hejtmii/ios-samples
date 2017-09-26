@@ -2,9 +2,6 @@
 //  ViewController.swift
 //  Samples
 //
-//  Created by Iva Hejtmánková on 26.09.17.
-//  Copyright © 2017 Iva Hejtmánková. All rights reserved.
-//
 
 import UIKit
 
@@ -15,10 +12,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         let margins = content.layoutMarginsGuide
-        let count = 100
+        let count = 50
         var lastLabel = UILabel.init()
         content.translatesAutoresizingMaskIntoConstraints = false
         
+        // Render some content
         for i in 0 ..< count {
             let label = UILabel.init()
             label.translatesAutoresizingMaskIntoConstraints = false
@@ -28,6 +26,7 @@ class ViewController: UIViewController {
             label.text = "Label \(i)"
             label.font = label.font.withSize(CGFloat(1.5 * Double(i)))
             
+            // Set constraints
             if (i == 0) {
                 label.topAnchor.constraint(equalTo: margins.topAnchor).isActive = true
             } else {
